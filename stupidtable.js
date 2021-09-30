@@ -133,10 +133,8 @@
   $.fn.stupidtable_build = function(){
     return this.each(function() {
       var $table = $(this);
-      var table_structure = [];
       var trs = $table.children("tbody").children("tr");
       var table_structure = new Array(trs.length);
-      console.log(`trs.lenght: ${trs.length}`);
       trs.each(function(index,tr_) {
         var tr = $(tr_);
 
